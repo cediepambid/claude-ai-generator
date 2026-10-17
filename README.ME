@@ -1,0 +1,59 @@
+
+# Claude AI Generator
+
+A responsive AI text generator prototype built with React, Node.js, and Express.
+
+## Features
+
+- Responsive React interface
+- Prompt input with character counter
+- Generate button with loading state
+- Mock AI response using a REST API
+- Copy response functionality
+- Input validation and error handling
+
+## Tech Stack
+
+- React and Vite
+- Node.js and Express
+- CSS
+- Lucide React
+
+## Getting Started
+
+### Backend
+
+Open a terminal:
+
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+Backend URL: `http://localhost:3001`
+
+### Frontend
+
+Open a second terminal:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Open the local URL provided by Vite.
+
+## API Endpoints
+
+- `GET /api/health`
+- `POST /api/generate`
+
+## Current Status
+
+The project currently uses mock responses. Claude API integration and production deployment are future steps.
+
+## Security
+
+Never commit API keys or `.env` files. Store secrets in backend environment variables.
