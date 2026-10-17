@@ -9,7 +9,9 @@ import {
 } from "lucide-react";
 import "./App.css";
 
-const API_URL =  import.meta.env.VITE_API_URL || "http://localhost:3001";
+const API_URL =
+  import.meta.env.VITE_API_URL ||
+  "http://localhost:3001";
 
 function App() {
   const [prompt, setPrompt] = useState("");
@@ -50,7 +52,7 @@ function App() {
     } catch (err) {
       setError(
         err.message === "Failed to fetch"
-          ? "Cannot connect to the backend. Make sure it is running on port 3001."
+          ? "Cannot connect to the backend. Please check the backend URL and try again."
           : err.message
       );
     } finally {
